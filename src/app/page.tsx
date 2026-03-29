@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ShieldCheck, MessageCircle, Phone } from "lucide-react";
+import { ShieldCheck, Phone } from "lucide-react";
 
 const steps = [
   {
