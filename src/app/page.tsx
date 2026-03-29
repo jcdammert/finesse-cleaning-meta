@@ -201,11 +201,11 @@ export default function Home() {
       {/* Footer CTA */}
       <footer className="bg-card-bg border-t border-white/10 px-6 py-16 text-center">
         <h2 className="font-syne text-3xl sm:text-4xl font-bold mb-4">
-          Questions before your call?
+          Want to learn more?
         </h2>
         <p className="text-gray-400 mb-8 max-w-md mx-auto">
-          We&apos;re happy to answer anything. Shoot us a text and we&apos;ll
-          get back to you fast.
+          Check out our website to see our services, past work, and why South
+          Florida trusts Finesse.
         </p>
         <a
           href="https://thiswaspowerwashed.com"
@@ -213,7 +213,7 @@ export default function Home() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-teal text-bg font-semibold px-8 py-3 rounded-full hover:bg-teal/90 transition-colors"
         >
-          Learn more
+          Visit our website
         </a>
         <p className="text-gray-500 text-sm mt-6">
           Or call us at (877) 346-3773 &middot; Mon–Sat 8am–6pm
