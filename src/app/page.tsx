@@ -1,4 +1,5 @@
-import { ShieldCheck, MessageCircle } from "lucide-react";
+import Image from "next/image";
+import { ShieldCheck, MessageCircle, Phone } from "lucide-react";
 
 const steps = [
   {
@@ -72,12 +73,38 @@ export default function Home() {
     <main className="min-h-screen">
       {/* Navbar */}
       <nav className="flex items-center justify-between px-6 py-4 border-b border-white/10 opacity-0 animate-fade-in">
-        <span className="font-syne text-xl font-bold text-white">Finesse.</span>
-        <div className="flex items-center gap-2 border border-white/20 rounded-full px-4 py-1.5 text-sm">
-          <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
-          <span className="text-off-white">Request received</span>
+        <Image
+          src="/logo.png"
+          alt="Finesse Cleaning"
+          width={140}
+          height={40}
+          className="h-8 w-auto"
+          priority
+        />
+        <div className="flex items-center gap-4">
+          <a
+            href="tel:+18773463773"
+            className="hidden sm:flex items-center gap-1.5 text-off-white text-sm hover:text-teal transition-colors"
+          >
+            <Phone className="w-3.5 h-3.5" />
+            (877) 346-3773
+          </a>
+          <div className="flex items-center gap-2 border border-white/20 rounded-full px-4 py-1.5 text-sm">
+            <span className="w-2 h-2 rounded-full bg-teal animate-pulse" />
+            <span className="text-off-white">Request received</span>
+          </div>
         </div>
       </nav>
+      {/* Mobile phone bar */}
+      <div className="sm:hidden flex justify-center py-2 border-b border-white/10 opacity-0 animate-fade-in">
+        <a
+          href="tel:+18773463773"
+          className="flex items-center gap-1.5 text-off-white text-sm hover:text-teal transition-colors"
+        >
+          <Phone className="w-3.5 h-3.5" />
+          (877) 346-3773
+        </a>
+      </div>
 
       {/* Hero */}
       <section className="text-center px-6 pt-20 pb-16 max-w-3xl mx-auto">
@@ -181,16 +208,25 @@ export default function Home() {
           get back to you fast.
         </p>
         <a
-          href="sms:+19545551234"
+          href="sms:+18773463773"
           className="inline-flex items-center gap-2 bg-teal text-bg font-semibold px-8 py-3 rounded-full hover:bg-teal/90 transition-colors"
         >
           <MessageCircle className="w-5 h-5" />
           Text us now
         </a>
         <p className="text-gray-500 text-sm mt-6">
-          Or call us at (954) 555-1234 &middot; Mon–Sat 8am–6pm
+          Or call us at (877) 346-3773 &middot; Mon–Sat 8am–6pm
         </p>
-        <p className="text-gray-500/60 text-xs mt-4">
+        <div className="mt-8 mb-4">
+          <Image
+            src="/logo.png"
+            alt="Finesse Cleaning"
+            width={120}
+            height={34}
+            className="h-7 w-auto mx-auto opacity-60"
+          />
+        </div>
+        <p className="text-gray-500/60 text-xs">
           &copy; 2026 Finesse Cleaning &middot; South Florida
         </p>
       </footer>
