@@ -208,11 +208,12 @@ export default function Home() {
           get back to you fast.
         </p>
         <a
-          href="sms:+18773463773"
+          href="https://thiswaspowerwashed.com"
+          target="_blank"
+          rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-teal text-bg font-semibold px-8 py-3 rounded-full hover:bg-teal/90 transition-colors"
         >
-          <MessageCircle className="w-5 h-5" />
-          Text us now
+          Learn more
         </a>
         <p className="text-gray-500 text-sm mt-6">
           Or call us at (877) 346-3773 &middot; Mon–Sat 8am–6pm
